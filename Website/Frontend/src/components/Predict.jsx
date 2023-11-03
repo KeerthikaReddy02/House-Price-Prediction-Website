@@ -28,6 +28,10 @@ function Predict() {
     }
     function onClick() {
         const {area, bedroom, bathroom, stories, mainroad, guestroom, basement, hotwaterheating, airconditioning, parking, prefarea, furnishingstatus} = formInfo;
+        if(area<=0){
+            alert("Area has to be more than 0");
+            return;
+        }
         if(area && bedroom && bathroom && stories && mainroad && guestroom && basement && hotwaterheating && airconditioning && parking && prefarea && furnishingstatus){
             axios.post("https://house-price-prediction-backend.onrender.com/upload", formInfo)
             .then(res => {
