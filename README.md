@@ -9,6 +9,9 @@
 -	Build the backend with the Routes and integrate it with the Frontend and the Flask app.
 -	Host the ML model (I used PythonAnywhere), host the NodeJS backend and ReactJS frontend (I used Render).
 
+## Results
+Decision Tree has the best score of 0.9991662239204835
+
 ## Tech stack 
 -	Frontend- ReactJS, HTML, CSS, Bootstrap
 -	Backend- NodeJS, ExpressJS, Flask
